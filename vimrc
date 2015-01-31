@@ -15,6 +15,10 @@ set statusline=%<%f\ %h%m%r%=%{fugitive#statusline()}\ \ %-14.(%l,%c%V%)\ %P
 let g:buftabs_only_basename=1
 let g:buftabs_marker_modified = "+"
 
+let g:indent_guides_enable_on_vim_startup=0
+let g:indent_guides_start_level=1
+let g:indent_guides_guide_size=1
+
 " Toggle whitespace visibility with ,s
 nmap <Leader>s :set list!<CR>
 set listchars=tab:▸\ ,trail:·,extends:❯,precedes:❮,nbsp:×,eol:¬
@@ -30,7 +34,7 @@ set hidden
 filetype indent on
 filetype plugin on
 set autoindent
-"set expandtab
+set expandtab
 set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,node_modules/*
 
 "allow deletion of previously entered data in insert mode
@@ -292,6 +296,7 @@ else
 	set t_Co=256
 	colorscheme Mustang
 	set mouse=a
+	let g:indent_guides_auto_colors = 0
 endif
 
 
