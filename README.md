@@ -2,8 +2,9 @@
 
 
 This Vim configuration is meant to make Vim feel more like an IDE than a simple console-based text editor.
-It's a fork from [https://github.com/tlhunter/vimrc](https://github.com/tlhunter/vimrc)
-I add Vundle support and refresh some Plugins to make more an IDE PHP like. 
+It's a fork from [https://github.com/tlhunter/vimrc](https://github.com/tlhunter/vimrc).
+I've added Vundle support and refresh some Plugins to make more an IDE PHP like. 
+
 
 
 ## Installation
