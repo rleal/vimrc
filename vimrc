@@ -1,6 +1,40 @@
-call pathogen#infect()
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+"
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+Bundle 'mileszs/ack.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'rbgrouleff/bclose.vim'
+Plugin 'vim-scripts/buftabs'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'pangloss/vim-javascript'
+Plugin 'elzr/vim-json'
+Plugin 'L9'
+Bundle 'groenewege/vim-less'
+Plugin 'tmhedberg/matchit'
+Plugin 'scrooloose/nerdcommenter'
+Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'wting/rust.vim'
+Plugin 'tpope/vim-sleuth'
+Plugin 'tpope/vim-surround'
+Plugin 'majutsushi/tagbar'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'Valloric/YouCompleteMe'
+
+call vundle#end()            " required
+filetype plugin on    " required
+
+"call pathogen#infect()
 let mapleader=","
-set nocompatible
+"set nocompatible
 set viminfo='1000,f1,:1000,/1000
 set history=1000
 
@@ -158,24 +192,34 @@ autocmd vimenter * if !argc() | NERDTree | endif
 " Hides "Press ? for help"
 let NERDTreeMinimalUI=1
 
+"------ Powerline -------
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+set term=xterm-256color
+set termencoding=utf-8
+
 "------ Syntastic -------
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_phpmd_disable = 1
-let g:syntastic_phpcs_disable = 1
-let g:syntastic_quiet_messages = { "type": "style" }
-
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
+"let g:syntastic_phpmd_disable = 1
+"let g:syntastic_phpcs_disable = 1
+"let g:syntastic_quiet_messages = { "type": "style" }
+"
 "------  Tagbar Plugin Options  ------
 " http://adamyoung.net/Exuberant-Ctags-OS-X
 " http://www.vim.org/scripts/script.php?script_id=273
 let g:tagbar_width=26
 noremap <silent> <Leader>y :TagbarToggle<CR>
+autocmd FileType php nested :TagbarOpen
 
 " ,ct = Builds ctags
 "map <Leader>ct :! /usr/local/bin/ctags -R *<CR>
