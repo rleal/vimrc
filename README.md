@@ -1,9 +1,10 @@
 # /home/tlhunter/.vim/vimrc
 
-![Screenshot](./screenshot.png "Screenshot of this .vimrc in action")
 
 This Vim configuration is meant to make Vim feel more like an IDE than a simple console-based text editor.
-I use it mostly under with MacVIM and Linux GVim though I occasionally run it directly in a terminal.
+It's a fork from [https://github.com/tlhunter/vimrc](https://github.com/tlhunter/vimrc)
+I add Vundle support and refresh some Plugins to make more an IDE PHP like. 
+
 
 ## Installation
 
@@ -13,7 +14,10 @@ Run these commands to get this Vim configuration working on your OS X or Linux m
 cd ~
 git clone git://github.com/rleal/vimrc.git .vim
 ln -s ~/.vim/vimrc ~/.vimrc
+vim +PluginInstall +qall
 ```
+
+
 
 ## Features
 
@@ -24,6 +28,7 @@ ln -s ~/.vim/vimrc ~/.vimrc
 * View status of the current GIT repo, if applicable
 * Additional features when running under MacVIM
 * Quickly navigate to files using a fuzzy finder
+* Code Completion
 
 ### Switching between files (Buffers)
 
@@ -75,7 +80,6 @@ Set the scheme using `:colorscheme NAME`.
 #### Pre-Requisites
 
 * Install ctags and [configure on your Mac](http://thomashunter.name/blog/installing-vim-taglist-with-macvim-in-os-x/).
-* _NB: Tag List is currently not functioning_
 
 ### Copying and Pasting between OS
 
