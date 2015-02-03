@@ -1,4 +1,4 @@
-# /home/tlhunter/.vim/vimrc
+# /home/rleal/.vim/vimrc
 
 
 This Vim configuration is meant to make Vim feel more like an IDE than a simple console-based text editor.
@@ -13,9 +13,18 @@ Run these commands to get this Vim configuration working on your OS X or Linux m
 
 ```bash
 cd ~
-git clone git://github.com/rleal/vimrc.git .vim
+git clone --recursive git://github.com/rleal/vimrc.git .vim
 ln -s ~/.vim/vimrc ~/.vimrc
 vim +PluginInstall +qall
+```
+
+NOTE: If you have this not found error of YouCompleteMe:
+```bash
+ycm_client_support.[so|pyd|dll] and ycm_core.[so|pyd|dll] not detected; you need to compile YCM before using it. Read the docs!
+````
+execute:
+```bash
+~/.vim/bundle/YouCompleteMe/install.sh
 ```
 
 
