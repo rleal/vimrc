@@ -3,4 +3,3 @@ sessions/*
 tags
 tags-ja
 bundle/*
-!Vundle.vim
