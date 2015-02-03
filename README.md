@@ -18,6 +18,15 @@ ln -s ~/.vim/vimrc ~/.vimrc
 vim +PluginInstall +qall
 ```
 
+NOTE: If you have this not found error of YouCompleteMe:
+```bash
+ycm_client_support.[so|pyd|dll] and ycm_core.[so|pyd|dll] not detected; you need to compile YCM before using it. Read the docs!
+````
+execute:
+```bash
+~/.vim/bundle/YouCompleteMe/install.sh
+```
+
 
 
 ## Features
