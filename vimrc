@@ -47,6 +47,7 @@ set nowrap
 set vb
 set ruler
 set statusline=%<%f\ %h%m%r%=%{fugitive#statusline()}\ \ %-14.(%l,%c%V%)\ %P
+set clipboard=unnamed
 let g:buftabs_only_basename=1
 let g:buftabs_marker_modified = "+"
 
