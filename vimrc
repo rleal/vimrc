@@ -28,6 +28,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'majutsushi/tagbar'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'mattn/emmet-vim'
 
 call vundle#end()            " required
 filetype plugin on    " required
@@ -209,10 +210,7 @@ set termencoding=utf-8
 "let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_auto_loc_list = 1
 "let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
-"let g:syntastic_phpmd_disable = 1
-"let g:syntastic_phpcs_disable = 1
-"let g:syntastic_quiet_messages = { "type": "style" }
+let g:syntastic_quiet_messages = { "type": "style" }
 "
 "------  Tagbar Plugin Options  ------
 " http://adamyoung.net/Exuberant-Ctags-OS-X
