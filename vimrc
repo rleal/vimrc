@@ -27,8 +27,11 @@ Plugin 'tpope/vim-sleuth'
 Plugin 'tpope/vim-surround'
 Plugin 'majutsushi/tagbar'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'shawncplus/phpcomplete.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
+Bundle 'arnaud-lb/vim-php-namespace'
+Plugin 'craigemery/vim-autotag'
 
 call vundle#end()            " required
 filetype plugin on    " required
@@ -234,6 +237,10 @@ nnoremap <Leader>gp :Ggrep
 nnoremap <Leader>gR :Gread<CR>
 nnoremap <Leader>gg :Git 
 nnoremap <Leader>gd :Gdiff<CR>
+
+
+inoremap <Leader>u <C-O>:call PhpInsertUse()<CR>
+noremap <Leader>u :call PhpInsertUse()<CR>
 
 
 "------  Text Editing Utilities  ------
