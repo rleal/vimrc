@@ -8,7 +8,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Bundle 'mileszs/ack.vim'
 Plugin 'kien/ctrlp.vim'
@@ -20,7 +19,9 @@ Plugin 'elzr/vim-json'
 Plugin 'L9'
 Bundle 'groenewege/vim-less'
 Plugin 'tmhedberg/matchit'
+Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
 Bundle 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'wting/rust.vim'
 Plugin 'tpope/vim-sleuth'
