@@ -33,6 +33,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
 Bundle 'arnaud-lb/vim-php-namespace'
 Plugin 'craigemery/vim-autotag'
+Plugin 'pedrogimenez/vim-phpunit'
 
 call vundle#end()            " required
 filetype plugin on    " required
@@ -144,7 +145,11 @@ nnoremap <silent> <Leader>Q <C-w>c
 set incsearch
 set ignorecase
 set smartcase
-set hlsearch
+set nohlsearch
+
+" PHPUnit mappings
+map <Leader>l :call RunCurrentTest()<CR>
+map <Leader>la :call RunAllTests()<CR>
 
 " Clear search highlights when pressing ,b
 nnoremap <silent> <leader>b :nohlsearch<CR>
