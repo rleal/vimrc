@@ -27,6 +27,11 @@ execute:
 ~/.vim/bundle/YouCompleteMe/install.sh
 ```
 
+Generate tags for autocompletion. Change to project directory and execute:
+```bash
+~/.vim/generate-php-tags.sh
+```
+The tags file will refresh every time yoy save a file (auto-tag plugin)
 
 
 ## Features
