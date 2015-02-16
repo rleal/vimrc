@@ -45,6 +45,10 @@ The tags file will refresh every time yoy save a file (auto-tag plugin)
 * Quickly navigate to files using a fuzzy finder
 * Code Completion
 
+### Comments
+* Use _,ci_ to toggle line comments on line/s
+
+
 ### Switching between files (Buffers)
 
 * Use _,q_ to close the current file (a different file will appear in its place)
@@ -85,6 +89,14 @@ The tags file will refresh every time yoy save a file (auto-tag plugin)
 
 * Use _y_ to toggle the tag browser viewport
 * Use _s_ to reorder the items by alpha or occurance
+
+### PHPUnit
+ * Use _,la_ to execute all tests
+ * 
+ 
+### Git
+* Use _:Gstatus_ to view git status
+* Use _:Gdiff_ to show file diffs and solve conflicts
 
 ### Themes (ColorSchemes)
 
